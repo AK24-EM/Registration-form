@@ -1,52 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive forms</title>
+    <title>Responsive Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="backg">
-        <h1>WEB LOGIN</h1>
-    </div>
-    <div id="elem">
-        E L E M E N T S
-    </div>
+    <div class="container">
+        <h1 class="main-title">WEB LOGIN</h1>
+        <div class="subtitle">ELEMENTS</div>
 
-    <div class="login">
-        <h1>
-            USER LOGIN
-        </h1>
-        <hr>
-        <div>
-            <form action="submission">
-                <input type="text" id="Name" name="Name" placeholder="👨  Username" required>
-            </form>
-        </div>
-        <br>
-        <div id="pass">
-            <form action="pass">
-                <input type="password" id="pass" name="pass" placeholder="🔓 password">
-            </form>
-        </div>
-        <div class="remember">
-            <input class="remeber" type="checkbox" id="remember" name="remember"
-                style="height: 15px; position:relative; left:-160px;bottom:-29px;">
-            <label for="remember">Remember Me</label>
-        </div>
-        <div id="forgot">
-            <h1>forget password?</h1>
-        </div>
-        <div class="butt">
+        <div class="login">
+            <h2>USER LOGIN</h2>
+            <hr>
             <form action="submit">
-                <button>Sign in</button>
+                <input type="text" id="Name" name="Name" placeholder="👨  Username" required>
+                <input type="password" id="pass" name="pass" placeholder="🔓 Password" required>
+                <div class="options">
+                    <label><input type="checkbox" id="remember"> Remember Me</label>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit">Sign In</button>
             </form>
         </div>
-
     </div>
 </body>
-
 </html>
